@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="img-container">
@@ -25,7 +26,7 @@
      <p>You know you want to.</p>
    </div>
 
-   <form action="">
+   <form action="" id="form">
       <ul>
         <h2>Let's do this!</h2>
         <li>
@@ -42,6 +43,7 @@
           <label for="email">
             <div class="label-class"><span aria-label="Required">*</span>EMAIL</div>
             <input type="email" name="email" id="email" placeholder="abcde@mail.com" required>
+            <p class="help">Please input a valid Email</p>
           </label>
           <label for="phone">
             <div class="label-class">PHONE NUMBER</div>
@@ -51,11 +53,12 @@
         <li>
           <label for="pswd">
             <div class="label-class"><span aria-label="Required">*</span>PASSWORD</div>
-            <input type="password" name="pswd" id="pswd" minlength="8" required>
+            <input type="password" name="pswd" id="pswd" required>
+            <p class="help">nothing was entered</p>
           </label>
           <label for="confirm">
             <div class="label-class"><span aria-label="Required">*</span>CONFIRM PASSWORD</div>
-            <input type="password" name="confirm_pswd" id="confirm" minlength="8" required>
+            <input type="password" name="confirm_pswd" id="confirm" required>
           </label>
         </li>
       </ul>

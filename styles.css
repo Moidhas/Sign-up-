@@ -6,6 +6,7 @@
 
 :root {
   --right-alignemnt: 50px;
+  --error-color:  #c00;
 }
 
 body {
@@ -93,7 +94,7 @@ button,
 }
 
 ul {
-  padding: 15px var(--right-alignemnt) 20px var(--right-alignemnt);
+  padding: 15px 0px 20px var(--right-alignemnt);
 
   list-style: none;
   display: flex;
@@ -128,10 +129,6 @@ input:active {
   box-shadow: 4px 3px 7px #cacbcc;
 }
 
-input:invalid {
-  border: solid red;
-}
-
 .right-page > p > a:visited,
 .right-page > p > a:link {
   text-decoration: none;
@@ -148,4 +145,18 @@ button {
   font-weight: 550;
 }
 
+.invalid {
+  border-color: var(--error-color, red);
+}
 
+.help {
+  color: var(--error-color, red);
+  font-size: 0.65rem;
+  letter-spacing: normal;
+  padding-top: 5px;
+  display: none;
+}
+
+input.invalid + .help {
+  display: block;
+}

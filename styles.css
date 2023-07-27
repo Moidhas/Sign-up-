@@ -45,7 +45,7 @@ body {
 
 .title {
   font-family: norse, sans-serif;
-  font-size: clamp(10px, 5vw, 5rem); 
+  font-size: 3.2rem; 
   align-self: flex-end;
 }
 
